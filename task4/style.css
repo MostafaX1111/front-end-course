@@ -30,13 +30,7 @@ html{
     font-size: 40px;
 }
 .hr-style {
-    /* border-color: orangered; */
     width: 10%;
-    /* color: orangered;
-    background-color: orangered; */
-    /* border-width: 14px; */
-    /* border-style: solid; */
-    
     margin: 3% auto;
 }
 .hr-primary{
@@ -102,16 +96,11 @@ nav li {
 }
 .bg-img{
     background-image: url(marketing.jpg);
-    /* height: 600px; */
         background-repeat: no-repeat;
-    /* background-position-x: right; */
-    /* background-position-y: bottom; */
-    /* cover , containe ==> search */
     background-size: 100% 100%;
-    /* background-color: rgb(22, 37, 144); */
 }
 .bg-img-2{
-    background-image: url(../images/istockphoto-517188688-612x612.jpg);
+    background-image: url(marketing.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-color: rgb(52, 70, 231);
@@ -292,12 +281,8 @@ nav li {
     transition: 0.3s ease;
 }
 .btn-submit:hover {
-    background: #e05a00;
+    background: #0bc58a;
 }
-
-/* ======================================== */
-/* ---------- Banner Form Style ---------- */
-/* ======================================== */
 .banner-content {
     display: flex;
     align-items: center;
@@ -357,17 +342,4 @@ nav li {
 }
 .btn-submit-banner:hover {
     background: #e05a00;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .banner-text {
-        width: 100%;
-        text-align: center;
-    }
-    .banner-form {
-        width: 80%;
-        margin: 5% auto;
-        float: none;
-    }
 }
