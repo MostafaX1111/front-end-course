@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    :root {
+        --car-distance: 60%;
+    }
+    
+    .car {
+        width: 120px;
+    }
+}

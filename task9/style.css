@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+:root {
+    --track-bg: #000000;
+    --car-distance: 80%;
+}
+.container {
+    width: 100%;
+    margin: auto;
+}
+.padding-top-bottom {
+    padding: 4% 0%;
+}
+.track {
+    width: 100%;
+    height: 180px;
+    background-color: var(--track-bg);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.car {
+    width: 180px;
+    position: absolute;
+    left: 0;
+    
+    animation-name: moveCar;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+}
+
+.car:hover {
+    animation-play-state: paused;
+}
+@keyframes moveCar {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: var(--car-distance); 
+    }
+}
+@media (max-width: 768px) {
+    :root {
+        --car-distance: 60%;
+    }
+    
+    .car {
+        width: 120px;
+    }
+}
